@@ -45,7 +45,7 @@ let data = `{
  "version": 0.0.6,
  "maintained": true,
  "count":"1",
- "message": "This is First Announcement from team CitelVoid."
+ "message": "This is First Announcement from team silva tech."
 }`
   res.send(data)
 });
@@ -108,7 +108,7 @@ app.get("/", (req, res) => {
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
            await session.sendMessage(session.user.id, {text: 'Secktor;;;'+c});	
-          let cc = `*Thanks for choosing Secktor-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Secktor-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
+          let cc = `*Thanks for choosing Silvenus-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Secktor-bot_\n\nVisit secktorbot.me\n*1.Repo:* https://github.com/Sylivanu/silvenus\n*2.Github:* https://github.com/Sylivanu\n*3.Backup:* https://github.com/SilvaTechB\n*𝑺𝒊𝒍𝒗𝒂 𝒕𝒆𝒄𝒉*\nThanks`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
